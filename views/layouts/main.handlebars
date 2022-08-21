@@ -4,11 +4,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Matt's Super Cool Tech Blog</title>
-    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
+
   <body>
     <div class="wrapper">
       <header>
+        <h1>
+          <a href="/">Matt's Super Cool Tech Blog</a>
+        </h1>
         <nav>
           <a href="/">Home</a>
           {{#if loggedIn}}
@@ -18,9 +26,7 @@
             <a href="/login">Login</a>
           {{/if}}
         </nav>
-        <h1>
-          <a href="/">Matt's Super Cool Tech Blog</a>
-        </h1>
+
       </header>
 
       <main>
@@ -31,7 +37,7 @@
       </footer>
     </div>
     {{#if loggedIn}}
-    <script src="/javascript/logout.js"></script>
+      <script src="/javascript/logout.js"></script>
     {{/if}}
   </body>
 </html>
